@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Часто задаваемые вопросы (FAQ) о компенсации за задержку зарплаты</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        nav a { margin-right: 15px; color: #1e3c72; text-decoration: none; font-weight: bold; }
+        h1 { color: #1e3c72; }
+        h2 { color: #333; margin-top: 20px; border-left: 5px solid #1e3c72; padding-left: 15px; }
+        .faq-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .faq-question { font-weight: bold; font-size: 1.1em; color: #1e3c72; margin-bottom: 10px; }
+        .faq-answer { margin-left: 15px; }
+        ul, ol { margin-left: 20px; }
+        li { margin: 5px 0; }
+        .footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+        a { color: #1e3c72; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about.html">О проекте</a>
+            <a href="/faq.html">FAQ</a>
+        </nav>
+        <h1>Часто задаваемые вопросы (FAQ)</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">1. Как рассчитывается компенсация за задержку зарплаты?</div>
+            <div class="faq-answer">Согласно статье 236 Трудового кодекса РФ, за каждый день задержки выплаты зарплаты, отпускных и других выплат работодатель обязан выплатить компенсацию в размере не ниже 1/150 ключевой ставки Центрального банка РФ от невыплаченной суммы. Наш калькулятор автоматически производит этот расчет: <code>Сумма долга × (Ключевая ставка / 100 / 150) × Количество дней задержки</code>[reference:1][reference:2].</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">2. Как правильно определить количество дней просрочки?</div>
+            <div class="faq-answer">Первый день просрочки — это день, следующий за установленной датой выплаты. Последний день — это день фактической выплаты долга. Например, если зарплату должны были выдать 5-го числа, то просрочка начинается с 6-го. Наш калькулятор включает оба этих дня в расчет[reference:3].</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">3. Какая ключевая ставка ЦБ РФ используется в калькуляторе?</div>
+            <div class="faq-answer">По умолчанию мы используем актуальную ставку 21%, которая действует с 28 октября 2024 года[reference:4]. Однако вы можете изменить это значение в калькуляторе на ту ставку, которая была актуальна в период вашей задержки. Мы следим за изменениями ставки, чтобы предоставлять актуальные данные.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">4. Что делать с результатом расчета? Как получить компенсацию?</div>
+            <div class="faq-answer">Рассчитанная сумма — это минимальный размер компенсации, на которую вы имеете право. Для её получения следуйте этим шагам:
+                <ol>
+                    <li>Составьте письменное требование к работодателю.</li>
+                    <li>Если работодатель отказывается платить, обратитесь в трудовую инспекцию или прокуратуру.</li>
+                    <li>Подайте исковое заявление в суд.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">5. Облагается ли компенсация за задержку зарплаты налогом?</div>
+            <div class="faq-answer">Нет, компенсация за задержку заработной платы не облагается налогом на доходы физических лиц (НДФЛ), так как является мерой ответственности работодателя.</div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Калькулятор компенсации за задержку зарплаты. Информация на сайте носит ознакомительный характер.</p>
+        </div>
+    </div>
+</body>
+</html>

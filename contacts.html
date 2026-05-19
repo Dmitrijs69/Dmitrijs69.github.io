@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        nav a { margin-right: 15px; color: #1e3c72; text-decoration: none; font-weight: bold; }
+        h1 { color: #1e3c72; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .contact-form button { background: #1e3c72; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .contact-form button:hover { background: #0f2b4f; }
+        .footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+        a { color: #1e3c72; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about.html">О проекте</a>
+            <a href="/faq.html">FAQ</a>
+        </nav>
+        <h1>Контакты</h1>
+        <p>Буду рад обратной связи. Пишите!</p>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Введите ваше сообщение..."></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="statusMessage"></div>
+
+        <h2>Обратная связь</h2>
+        <p>Если у вас есть вопросы или предложения по улучшению калькулятора, я с удовольствием их рассмотрю.</p>
+        <p>Также вы можете написать мне на почту: <a href="mailto:yourname@example.com">yourname@example.com</a> (замените `yourname@example.com` на ваш реальный email).</p>
+
+        <script>
+            // Простой код для отображения сообщения без реальной отправки
+            const form = document.getElementById('contactForm');
+            const statusDiv = document.getElementById('statusMessage');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                statusDiv.innerHTML = '<p style="color: green;">Сообщение отправлено! (демо-режим).</p>';
+                form.reset();
+            });
+        </script>
+
+        <div class="footer">
+            <p>© 2025 Калькулятор компенсации за задержку зарплаты. Информация на сайте носит ознакомительный характер.</p>
+        </div>
+    </div>
+</body>
+</html>
