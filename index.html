@@ -6,6 +6,8 @@
     <title>Калькулятор компенсации за задержку зарплаты 2025 | ТК РФ ст.236</title>
     <meta name="description" content="Бесплатный онлайн калькулятор расчета процентов (компенсации) за задержку заработной платы по ст. 236 ТК РФ. Актуальная ставка ЦБ 2025 года.">
     <meta name="keywords" content="компенсация за задержку зарплаты, калькулятор, ст 236, ставка рефинансирования">
+    <!-- Мета-тег верификации Яндекс (ваш) -->
+    <meta name="yandex-verification" content="ca813e2511662e82" />
     <style>
         * {
             box-sizing: border-box;
@@ -47,6 +49,23 @@
             margin: 8px 0 0;
             opacity: 0.85;
             font-size: 0.9rem;
+        }
+        .nav {
+            background: #f0f2f5;
+            padding: 12px 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            border-bottom: 1px solid #e0e8f0;
+        }
+        .nav a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .nav a:hover {
+            text-decoration: underline;
         }
         .content {
             padding: 28px;
@@ -131,6 +150,10 @@
             .result-amount {
                 font-size: 1.8rem;
             }
+            .nav {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
@@ -139,6 +162,12 @@
     <div class="header">
         <h1>📅 Компенсация за задержку зарплаты</h1>
         <p>По статье 236 Трудового кодекса РФ</p>
+    </div>
+    <div class="nav">
+        <a href="/">Главная</a>
+        <a href="/about.html">О проекте</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contacts.html">Контакты</a>
     </div>
     <div class="content">
         <div class="input-group">
@@ -215,7 +244,6 @@
             document.getElementById('daysLabel').innerText = 'Количество дней просрочки: 0';
             return;
         }
-        // Формула: (debt * (rate/100) / 300) * 2 * diffDays
         const rateDecimal = ratePercent / 100;
         const compensation = (debt * rateDecimal / 300) * 2 * diffDays;
         const formatted = compensation.toLocaleString('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -224,7 +252,6 @@
     }
 
     document.getElementById('calcBtn').addEventListener('click', calculate);
-    // Автоматический расчёт при изменении полей
     const inputs = ['debt', 'startDate', 'endDate', 'rate'];
     inputs.forEach(id => {
         document.getElementById(id).addEventListener('input', calculate);
