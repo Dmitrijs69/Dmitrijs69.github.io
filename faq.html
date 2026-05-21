@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ – ответы на вопросы о финансовых калькуляторах | nalogic.ru</title>
+    <meta name="description" content="Ответы на частые вопросы: как работают калькуляторы, откуда берутся формулы, нужно ли платить налоги.">
+    <meta name="yandex-verification" content="ca813e2511662e82">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#f8fafc;padding:20px}
+        .container{max-width:1000px;margin:auto;background:white;border-radius:48px;padding:40px;box-shadow:0 20px 40px -12px rgba(0,0,0,0.1)}
+        .nav{display:flex;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+        .nav a{color:#3b82f6;text-decoration:none;font-weight:500}
+        h1{font-size:2rem;margin-bottom:24px}
+        .faq-item{border-bottom:1px solid #e2e8f0;padding:20px 0}
+        .faq-question{font-weight:700;font-size:1.2rem;cursor:pointer;display:flex;justify-content:space-between;color:#0f172a}
+        .faq-answer{display:none;margin-top:12px;color:#475569;line-height:1.6}
+        .faq-answer.open{display:block}
+        .footer{margin-top:40px;text-align:center;border-top:1px solid #e2e8f0;padding-top:24px;color:#64748b}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <a href="/">Главная</a>
+        <a href="/about.html">О проекте</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/blog.html">Блог</a>
+        <a href="/contacts.html">Контакты</a>
+    </div>
+    <h1>❓ Часто задаваемые вопросы</h1>
+    <div class="faq-item"><div class="faq-question">1. Откуда берутся формулы для расчётов? <span>▼</span></div><div class="faq-answer">Формулы взяты из официальных источников: Налоговый кодекс РФ (статья 224 для НДФЛ, статья 217.1 для налога с продажи), Жилищный кодекс (статья 155 – пени за ЖКХ), а также указания Банка России о ключевой ставке. Калькулятор пени использует 1/300 ставки рефинансирования.</div></div>
+    <div class="faq-item"><div class="faq-question">2. Нужно ли платить налог с банковского вклада? <span>▼</span></div><div class="faq-answer">Да, с 2021 года в России действует налог на проценты по вкладам. Не облагается налогом только сумма процентов, не превышающая 1 млн рублей × ключевую ставку ЦБ на начало года. Наш калькулятор показывает начисленные проценты без вычета налога – для информации.</div></div>
+    <div class="faq-item"><div class="faq-question">3. Как считается пеня за просрочку оплаты ЖКХ? <span>▼</span></div><div class="faq-answer">Согласно ст. 155 ЖК РФ, за каждый день просрочки начисляется пеня в размере 1/300 ключевой ставки ЦБ от суммы долга. Например, при долге 5000 ₽ и ставке 21% пеня в день = 5000 × 0,21 / 300 = 3,5 ₽. Наш калькулятор автоматически умножает на количество дней.</div></div>
+    <div class="faq-item"><div class="faq-question">4. Всегда ли при продаже квартиры надо платить налог? <span>▼</span></div><div class="faq-answer">Нет. Если квартира находится в собственности более 5 лет (или более 3 лет в отдельных случаях, например при получении по наследству или по договору дарения от близкого родственника), то налог платить не нужно. Наш калькулятор проверяет срок владения и кадастровую стоимость.</div></div>
+    <div class="faq-item"><div class="faq-question">5. Можно ли использовать ваши калькуляторы для официальных отчётов? <span>▼</span></div><div class="faq-answer">Калькуляторы дают предварительную оценку. Для подачи налоговых деклараций или судебных разбирательств рекомендуем перепроверять расчёты у профессионального бухгалтера или юриста. Мы не несём ответственности за возможные убытки, связанные с использованием результатов.</div></div>
+    <div class="faq-item"><div class="faq-question">6. Как часто обновляются ставки ЦБ? <span>▼</span></div><div class="faq-answer">Ключевая ставка может меняться до нескольких раз в год. На сайте всегда актуальное значение (сейчас 21%). При изменении ставки мы обновляем калькулятор в течение суток.</div></div>
+    <div class="faq-item"><div class="faq-question">7. Почему сайт бесплатный? Как вы зарабатываете? <span>▼</span></div><div class="faq-answer">Сайт бесплатен для пользователей. Мы планируем размещать ненавязчивую контекстную рекламу и партнёрские ссылки на финансовые сервисы (например, подбор вкладов). Это позволяет нам покрывать расходы на домен и хостинг и развивать проект.</div></div>
+    <div class="footer">
+        <p>© 2025 nalogic.ru. Ответы не являются юридической консультацией.</p>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.faq-question').forEach(q=>{q.addEventListener('click',()=>{q.nextElementSibling.classList.toggle('open');});});
+</script>
+</body>
+</html>
