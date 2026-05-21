@@ -1,0 +1,7 @@
+User-agent: Yandex
+Allow: /
+Sitemap: https://nalogic.ru/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Sitemap: https://nalogic.ru/sitemap.xml
